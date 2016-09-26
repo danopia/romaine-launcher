@@ -1,0 +1,58 @@
+body {
+  background-color: #aed581;
+  margin: 12px;
+}
+
+/*
+  <div class="search-bar">
+    <img src="/assets/Romaine_128.png" class="logo">
+    <div class="search-box">
+      <div class="text-preview"></div>
+      <input type="text" autofocus>
+    </div>
+  </div>
+*/
+
+.search-bar {
+  display: flex;
+}
+
+.logo {
+  height: 64px;
+  margin-right: 8px;
+}
+
+.search-box {
+  position: relative;
+  background-color: #dcedc8;
+  flex: 1;
+  display: flex;
+}
+
+.search-box .autocomplete, .search-box input {
+  font-size: 3em;
+  padding: 0.2px 0.5em;
+  border: 0;
+  font-family: Roboto, sans-serif;
+  background: transparent;
+}
+
+.search-box input {
+  z-index: 25;
+  color: #33691e;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+.search-box .autocomplete {
+  color: #689f38;
+  overflow: hidden;
+  white-space: nowrap;
+  align-self: center;
+}
+.search-box .autocomplete .dupped {
+  visibility: hidden;
+}

@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Romaine App Launcher",
+  "short_name": "Romaine Launcher",
+  "description": "It's like Alfred for your chroot",
+  "version": "0.0.1",
+  "minimum_chrome_version": "38",
+  
+  "permissions": [
+    "alwaysOnTopWindows"
+  ],
+  
+  "commands": {
+    "show-launcher": {
+      "suggested_key": {
+        "chromeos": "Search+R"
+      },
+      "description": "Show Romaine launcher"
+    }
+  },
+
+  "icons": {
+    "16": "assets/Romaine_16.png",
+    "128": "assets/Romaine_128.png"
+  },
+
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  }
+}
